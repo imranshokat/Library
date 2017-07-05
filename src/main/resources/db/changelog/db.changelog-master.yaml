@@ -1,0 +1,45 @@
+databaseChangeLog:
+ - changeSet:
+     id: 1
+     author: Imran
+     changes:
+      - createTable:
+          tableName: book_entity
+          columns:
+           - column:
+               name: id
+               type: Bigint
+               autoIncrement: true
+               constraints:
+                 primaryKey: true
+                 nullable: false
+           - column:
+               name: title
+               type: varchar(50)            
+               constraints:               
+                 nullable: false
+           - column:
+               name: author
+               type: varchar(50)            
+               constraints:               
+                 nullable: false
+           - column:
+               name: genre
+               type: varchar(50)            
+               constraints:               
+                 nullable: false
+           - column:
+               name: description
+               type: varchar(100)            
+               constraints:               
+                 nullable: false
+           - column:
+               name: price
+               type: varchar(50)            
+               constraints:               
+                 nullable: false
+           - column:
+               name: publishDate
+               type: varchar(50)            
+               constraints:               
+                 nullable: false

@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/library
+    username: root
+    password: 
+    name: library
+    
+  jpa:
+    hibernate:
+      ddl-auto: none
+      
+lxiquibase:
+  enabled: true
+  
+liquibase:
+  change-log: classpath:/db/changelog/db.changelog-master.yaml
